@@ -141,7 +141,7 @@ Here are some example screenshots from the project:
 ![Screenshot 4](screens/Знімок%20екрана%202025-03-22%20104035.png)
 ![Screenshot 5](screens/Знімок%20екрана%202025-03-22%20104044.png)
 ![Screenshot 6](screens/Знімок%20екрана%202025-03-22%20104054.png)
-![Screenshot 7](screens/Знімок%20екрана%202025-03-22%20104103.png)
+![Screenshot 7](screens/Знімок%екрана%2025-03-22-104104.png)
 ![Screenshot 8](screens/Знімок%20екрана%202025-03-22%20104113.png)
 ![Screenshot 9](screens/Знімок%20екрана%202025-03-22%20104126.png)
 
