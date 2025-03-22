@@ -1,5 +1,9 @@
 import requests
 import logging
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def get_all_trading_pairs():
     """
@@ -27,7 +31,7 @@ def get_all_trading_pairs():
 
     # API headers (needed only for CoinMarketCap)
     headers = {
-        "CoinMarketCap": {"X-CMC_PRO_API_KEY": "c22be80e-c803-414a-9fa8-f47bffc9177a"}
+        "CoinMarketCap": {"X-CMC_PRO_API_KEY": os.getenv("CMC_API_KEY")}
     }
 
     trading_pairs = {}  # Dictionary to store trading pairs for each source

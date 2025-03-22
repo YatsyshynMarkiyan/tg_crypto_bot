@@ -13,9 +13,13 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from databse import Database
 from tokens_list import get_all_trading_pairs
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Your Telegram bot token
-TOKEN = "7680117446:AAH9Gn26f9xR5nVNuGSJvwvkQl0b-aP5JT8"
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 # Bot initialization
 bot = Bot(token=TOKEN)
@@ -109,7 +113,7 @@ def get_price(symbol, user_id):
     }
 
     # Set API headers if using CoinMarketCap (requires an API key)
-    headers = {"X-CMC_PRO_API_KEY": "c22be80e-c803-414a-9fa8-f47bffc9177a"} if source == "CoinMarketCap" else {}
+    headers = {"X-CMC_PRO_API_KEY": os.getenv("CMC_API_KEY")} if source == "CoinMarketCap" else {}
 
     # Log the request URL
     request_url = sources[source]
