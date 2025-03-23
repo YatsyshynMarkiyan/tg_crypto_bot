@@ -15,6 +15,9 @@ from databse import Database
 from tokens_list import get_all_trading_pairs
 import os
 from dotenv import load_dotenv
+from keep_alive import keep_alive
+
+keep_alive()
 
 load_dotenv()
 
