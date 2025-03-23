@@ -17,8 +17,6 @@ import os
 from dotenv import load_dotenv
 from keep_alive import keep_alive
 
-keep_alive()
-
 load_dotenv()
 
 # Your Telegram bot token
@@ -528,6 +526,8 @@ async def main():
     """
     Main function to start the bot and initialize necessary tasks.
     """
+    keep_alive()
+
     global trading_pairs
 
     dp.include_router(router)  # Include router to the dispatcher
